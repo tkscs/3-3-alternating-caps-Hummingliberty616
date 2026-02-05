@@ -10,9 +10,21 @@ def alt_caps(original_string):
         aLtErNaTiNg CaPiTaLiZaTiOn
     """
     new_string = ""
-
-    # YOUR CODE HERE
-
+    i = 0
+    for character in original_string:
+        i = i + 1
+        if i % 2 == 0:
+            new_string = new_string + character.lower()
+        
+        else: 
+            new_string = new_string + character.upper()
+   
     return new_string
 
 print(alt_caps("Alternating Capitalization"))
+
+
+
+
+
+
